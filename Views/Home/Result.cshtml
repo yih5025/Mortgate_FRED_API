@@ -1,0 +1,16 @@
+@model MortgageWebProject.Models.MortgageCalculatorModel
+@{
+    ViewData["Title"] = "계산 결과";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <p><strong>대출 금액:</strong> $@Model.LoanAmount</p>
+    <p><strong>사용자 입력 연이자율:</strong> @Model.AnnualInterestRate %</p>
+    <p><strong>대출 기간:</strong> @Model.TermYears 년</p>
+    <p><strong>월 상환금:</strong> $@Model.MonthlyPayment.ToString("F2")</p>
+    <p><strong>현재 평균 모기지 금리 (FRED):</strong> @Model.CurrentMortgageRate %</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">다시 계산하기</a>

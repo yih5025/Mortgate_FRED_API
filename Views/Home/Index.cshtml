@@ -1,0 +1,31 @@
+﻿@model MortgageWebProject.Models.MortgageCalculatorModel
+@{
+    ViewData["Title"] = "Mortgage Calculator";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>현재 평균 모기지 금리 (FRED 기준): <strong>@ViewBag.CurrentMortgageRate %</strong></p>
+
+<form asp-action="Calculate" method="post">
+    <div class="form-group">
+        <label asp-for="LoanAmount"></label>
+        <input asp-for="LoanAmount" class="form-control" />
+        <span asp-validation-for="LoanAmount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnnualInterestRate"></label>
+        <input asp-for="AnnualInterestRate" class="form-control" />
+        <span asp-validation-for="AnnualInterestRate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TermYears"></label>
+        <input asp-for="TermYears" class="form-control" />
+        <span asp-validation-for="TermYears" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">계산하기</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
