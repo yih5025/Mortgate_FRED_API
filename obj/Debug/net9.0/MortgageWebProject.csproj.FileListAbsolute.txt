@@ -95,3 +95,4 @@
 /Users/ilhanyu/ASP.NET/MortgageWebProject/obj/Debug/net9.0/MortgageWebProject.pdb
 /Users/ilhanyu/ASP.NET/MortgageWebProject/obj/Debug/net9.0/MortgageWebProject.genruntimeconfig.cache
 /Users/ilhanyu/ASP.NET/MortgageWebProject/obj/Debug/net9.0/ref/MortgageWebProject.dll
+/Users/ilhanyu/ASP.NET/MortgageWebProject/obj/Debug/net9.0/MortgageWebProject.sourcelink.json
